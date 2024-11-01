@@ -1,0 +1,22 @@
+<?php
+//mention your zip file
+$file = '[FILENAME]';
+ 
+// get the absolute path to $file
+$path = pathinfo(realpath($file), PATHINFO_DIRNAME);
+ 
+//create new zip class which is available in PHP core.
+$zip = new ZipArchive();
+ 
+//open your zip file using zip object
+$res = $zip->open($file);
+ 
+if ($res === TRUE) {
+  // extract it to the desired path
+  $zip->extractTo($path);
+  $zip->close();
+  echo "Unzipped [FILENAME]";
+} else {
+  echo "Please check permissions, I have no permission to unzip your file :[FILENAME]";
+}
+?>

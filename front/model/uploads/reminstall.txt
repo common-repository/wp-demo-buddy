@@ -1,0 +1,17 @@
+<?php
+	define( 'WP_INSTALLING', true );
+	/** Load WordPress Bootstrap */
+	require_once(  'wp-load.php' );
+	/** Load WordPress Administration Upgrade API */
+	require_once( 'wp-admin/includes/upgrade.php' );
+	/** Load wpdb */
+	require_once('wp-includes/wp-db.php' );
+	// WordPress installation
+	wp_install( '[weblog_title]', '[user_login]','[admin_email]', 1, '', '[admin_password]' );
+
+    $url = '[url]';
+
+	update_option( 'siteurl', $url );
+	update_option( 'home', $url );
+    echo 'wp installed.'
+?>

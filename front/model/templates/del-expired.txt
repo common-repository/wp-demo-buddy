@@ -1,0 +1,50 @@
+<?php
+/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// DELETE DB Table ////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+$dbhost = '[host]';
+$dbname = '[dbname]';
+$dbuser = '[user]';
+$dbpass = '[pass]';
+
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+if(!$conn )
+{
+ echo 'Could not connect: ' . mysql_error();
+}
+mysql_select_db($dbname, $conn);
+$q = "SELECT CONCAT(  'DROP TABLE ', GROUP_CONCAT( table_name ) ,  ';' ) AS statement
+            FROM information_schema.tables
+            WHERE table_schema =  '[dbname]'
+            AND table_name LIKE  '[dir]_%'";
+
+$resource1 = mysql_query($q,$conn);
+$resource2 = mysql_fetch_object($resource1);
+ 
+$resource3 = mysql_query($resource2->statement,$conn);
+
+$out .= $q. "\r\n". $resource2->statement. "\r\n".  print_r($resource3,true). "\r\n". mysql_error();
+mysql_close($conn);
+
+/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// DELETE FILES///////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+recursiveRmDir('[dir]');
+function recursiveRmDir($dir)
+{
+    $iterator = new RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir, \FilesystemIterator::SKIP_DOTS), \RecursiveIteratorIterator::CHILD_FIRST);
+    foreach ($iterator as $filename => $fileInfo) {
+        if ($fileInfo->isDir()) {
+            rmdir($filename);
+        } else {
+            unlink($filename);
+        }
+    }
+    rmdir('[dir]');
+}
+
+$out .= '[dir] deleting fuction done.';
+echo $out;
+?>

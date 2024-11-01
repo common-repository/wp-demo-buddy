@@ -1,0 +1,82 @@
+<?php
+/**
+ * @package DemoBuddy Remote
+ * @version 1.0
+ */
+/*
+Plugin Name: DemoBuddy Remote
+Plugin URI: http://demobuddy.com/
+Description: Actiavtes Demobuddy Plugins / Themes & hides menu items
+Author: DemoBuddy
+Version: 1.0
+Author URI: http://demobuddy.com/
+*/
+//
+if($_GET['rem'] == '1')
+{
+    require_once(  '../../wp-load.php' );  
+}
+$out = '';
+
+////////////////////////////////
+  /// disable menus  
+////////////////////////////////
+function demobuddy_rempages_09845435435()
+{
+    global $out;
+    $out .= "Remove Menus r\n";
+    $dis_menus = array([menupages]);
+    foreach($dis_menus as $menu_slug)
+    {
+        remove_menu_page( $menu_slug ); 
+        $out .= $menu_slug."\r\n"; 
+    }
+     $administrator = get_role( 'administrator' );
+
+	// A list of capabilities to remove from editors.
+    $caps = array( [disaccess]);
+
+    foreach ( $caps as $cap ) {
+        $administrator->remove_cap( $cap );
+    }
+
+}
+add_action('admin_init', 'demobuddy_rempages_09845435435');
+
+////////////////////////////////
+  /// Activate Plugins
+////////////////////////////////
+if ( !function_exists( 'get_plugins' ) ) 
+    require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        
+$all_plugins = get_plugins();
+$out .= "\r\nPlugins:\r\n";
+foreach($all_plugins as $path => $data)
+{
+    if(!is_plugin_active($path))
+    {
+        activate_plugin($path);
+        $out .= $path."\r\n";
+    }
+        
+}  
+
+
+$out .= "\r\nTheme\r\n";
+////////////////////////////////
+///// Activate Theme /////
+////////////////////////////////
+$directories = glob('../themes/*' , GLOB_ONLYDIR);
+foreach($directories as $path)
+{
+    if(stripos($path,'twenty') === false)
+    {
+        $dir = explode('/',$path);
+        switch_theme($dir[2]);
+        $out .= $dir[2]."\r\n";
+    }
+}
+
+if($_GET['rem'] == '1')
+echo $out;
+?>

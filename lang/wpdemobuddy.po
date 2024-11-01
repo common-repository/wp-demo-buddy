@@ -1,0 +1,319 @@
+# WP Demo Buddy Tranlation
+# Copyright (C) 2017
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <sam@affordableplugins.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: sam@affordableplugins.com\n"
+"POT-Creation-Date: 2017-02-16 12:31-0500\n"
+"PO-Revision-Date:  2017-02-16 12:31-0500\n"
+"Language: en\n"
+"Last-Translator: Sam Edward<sam@affordableplugins.com>\n"
+"Language-Team: TEAM <sam@affordableplugins.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "(optional).  If blank the demo will not be deleted automatically."
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Products.php:43
+msgid "Active"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Appearance (Themes)"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Appearance(Themes)"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:68
+msgid "Are you sure?"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Settings.php:166
+msgid "CRON SETTINGS :"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Products.php:43
+msgid "Click to Change Status"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:97
+msgid "Close"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Comments"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:169
+msgid "Cron Command"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:67
+msgid "DB Host"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:78
+msgid "DB Name"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:98
+msgid "DB Password"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:88
+msgid "DB User"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Dashboard"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:70
+msgid "Delete"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Delete After (hrs.)"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/DemoBuddy-class.php:1
+msgid "Demo Log & Chart"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Disable Access"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:58
+msgid "Edit"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:21
+msgid "FTP Host"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:16
+msgid "FTP Info"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:41
+msgid "FTP Password"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:31
+msgid "FTP User"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:123
+msgid "From Email"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:113
+msgid "From Name"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Hide Admin Menu"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Products.php:43
+msgid "InActive"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Language"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Leave Blank for US English.  Locale code can be found here"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Media"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:156
+msgid "Message"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:37
+msgid "Name"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:30
+msgid "New Demo Product"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Settings.php:173
+msgid "Once per Hour "
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Pages"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Plugins"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Posts"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Product Name"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:96
+msgid "Save"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/DemoBuddy-class.php:1
+msgid "Saved Successfully"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/admin_menu.php:8
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Settings"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/views/Products.php:23
+msgid "Settings are Not Completed yet.  Before Creating a Product, please conplete the Settings."
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:39
+msgid "Shortcode (copy/paste in your content/sidebar"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+#: DemoBuddy/DemoBuddy-class.php:1
+msgid "Sorry, your nonce did not verify."
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:38
+msgid "Status"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:144
+msgid "Subject"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Themes"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:69
+msgid "This Product"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Tools"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:51
+msgid "URL"
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Settings.php:56
+msgid "URL to this FTP location that  begins with http://."
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Upload Plugin"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Upload Theme"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Users"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "WARNING: Demo users can download your themes / plugins if you Enable Appearance(Theme) & Plugins Access in Demo.  We strongly recommend disabling Appearance(Theme) and Plugins Access."
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "Wordpress Locale"
+msgstr ""
+
+#. Text in function
+#: DemoBuddy/admin/model/admin-model.php:1
+msgid "You can ADD one Theme and Multiple plugins for a single Demo.  To add multiple plugins, first, UNZIP all the plugins to folders and then ZIP all the plugin folders into one zip file."
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/Products.php:69
+msgid "will be deleted."
+msgstr ""
+
+#. Text in echo
+#: DemoBuddy/admin/views/admin_menu.php:7
+msgid "Products"
+msgstr ""

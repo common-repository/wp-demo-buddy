@@ -1,0 +1,127 @@
+@import url( 'bootstrap.min.css ');
+.nav {
+background-color:#0074a2;
+}
+
+.nav-pills >li {
+margin-bottom:0px;
+}
+
+.nav-pills >li >a {
+color:#fff;
+}
+
+.nav >li >a:focus,.nav >li >a:hover {
+text-decoration:none;
+background-color:transparent;
+color:#ddd;
+}
+
+.active
+{
+    color:#009900
+}
+
+.inactive
+{
+    color:#999
+}
+
+.iconbrdr {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    cursor:hand;
+}
+#edit_product
+{
+    color: #009900;
+}
+#user_log
+{
+    color: #2500cc;
+}
+#del_product
+{
+    color: #e50023;
+}
+#form_style
+{
+    color: #8A2BE2;
+}
+#ad_code
+{
+    color: #00b200;
+}
+.glyphicon-stop
+{
+    color: #e50023;
+}
+/**
+ * .nav
+ * {
+ *     background-color: #191919 !important;
+ *     
+ * }
+
+ * .nav >li >a  {
+ *    color: #FFF !important; 
+ *     }
+ * .nav >li >a:focus, .nav >li >a:hover, .nav >li >a.active    
+ * {
+ *     /**
+ *  * background-color: #FFF055 !important;
+ *  
+ *     color:  #ffc425 !important;
+ * }
+ * .btn-primary  {
+ *     color: #FFF;
+ *     background-color: #191919 !important;
+ *  
+ * }
+
+ * .btn-primary:hover  {*/
+      /**
+ *  * background-color: #FFF055 !important;
+ *  
+ *     color:  #ffc425 !important;
+ *  
+ * }*/
+
+
+.nav
+{
+    background-color: #e64b50 !important; 
+}
+
+.nav >li >a  {
+   color: #FFF !important; 
+    }
+.nav >li >a:focus, .nav >li >a:hover, .nav >li >a.active    
+{
+    background-color: #191919 !important;
+    color:  #fff !important;
+}
+.btn-primary  {
+    color: #FFF;
+    background-color: #191919 !important;
+ 
+}
+
+.btn-primary:hover  {
+    /**
+ * background-color: #FFF055 !important;
+ */
+    color:  #fff !important;
+ 
+}
+.frmsetup
+{
+        border: 1px solid #f5f5f5;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 19px;
+    padding: 5px;
+}

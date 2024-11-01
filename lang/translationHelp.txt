@@ -1,0 +1,32 @@
+The Editor
+
+There are others, but this is most used: Poedit, a cross-platform gettext catalogs (.po files) editor.
+
+The Formats
+
+.mo stands for Machine Object
+-- compiled export of the .po file which is used by WordPress
+
+.po stands for Portable Object
+-- editable text file with the translations strings
+-- based on the master .pot file, using Update from POT file PoEdit function
+-- some folks distribute this as a master file, but it should be used only for translations
+
+.pot stands for Portable Object Template
+-- editable text file used to grab all the translatable strings from WordPress itself and Themes and Plugins, using Update from Sources PoEdit function
+
+
+The Procedure
+
+Duplicate the .pot file and rename it to plugin-basename-lang_COUNTRY.po
+Example for the referenced plugin case: subscribe-reloaded-pt_BR.po
+-- pt_BR means Portuguese Brazil, but many languages don't have a country variation...
+-- you'll have to fill in with your own language
+WPLANG in wp-config.php file must be set to your language, e.g., pt_BR
+Every time you save the .po file, PoEdit automatically generates a .mo file, which is the one WordPress uses and basically the only one you need to upload
+
+
+Observations
+
+If you do a full or a decent partial translation, kindly send it to admin@affordableplugis.com  author so we can include it in the Repository and you get credited for it.
+Don't forget to make a backup of your translation, because if you upgrade the plugin your file will be lost.
